@@ -1,0 +1,25 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+
+# Python virtual environments
+.venv/
+venv/
+backend/.venv/
+backend/venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# IDE files
+.vscode/
+
+# Build and temporary files
+dist/
+build/
