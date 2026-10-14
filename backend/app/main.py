@@ -9,11 +9,20 @@ from app.routes.cart import router as cart_router
 from app.routes.orders import router as orders_router
 from app.routes.admin_orders import router as admin_orders_router
 from app.routes.payments import router as payments_router
+from fastapi.middleware.cors import CORSMiddleware
 Base.metadata.create_all(bind=engine)
 
 
 app = FastAPI(
     title=settings.APP_NAME
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
