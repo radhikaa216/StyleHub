@@ -4,15 +4,15 @@ StyleHub is a fashion e-commerce application designed to provide a simple and se
 
 ## Features
 
-- **User Authentication:** User registration, login, and JWT-based authentication.
-- **Product Management:** Create, view, update, and deactivate products, with admin access control.
-- **Shopping Cart:** Add products, update quantities, view cart items, and remove items.
-- **Order Management:** Checkout, order history, order details, and order cancellation.
-- **Stock Management:** Validate product stock, reduce stock during checkout, and restore stock when an eligible order is cancelled.
-- **Payment Integration:** Stripe Checkout integration for online payments.
-- **Payment Webhooks:** Process Stripe payment events and update payment status.
-- **Admin Order Management:** View orders and manage order status transitions.
-- **Database:** MySQL with SQLAlchemy ORM.
+- User Authentication: User registration, login, and JWT-based authentication.
+- Product Management: Create, view, update, and deactivate products, with admin access control.
+- Shopping Cart: Add products, update quantities, view cart items, and remove items.
+- Order Management:Checkout, order history, order details, and order cancellation.
+-Stock Management: Validate product stock, reduce stock during checkout, and restore stock when an eligible order is cancelled.
+- Payment Integration: Stripe Checkout integration for online payments.
+- Payment Webhooks:Process Stripe payment events and update payment status.
+- Admin Order Management: View orders and manage order status transitions.
+- Database: MySQL with SQLAlchemy ORM.
 
 ## Technology Stack
 
@@ -26,7 +26,7 @@ StyleHub is a fashion e-commerce application designed to provide a simple and se
 | Password Security | Password Hashing |
 | Payment Gateway | Stripe |
 | API Documentation | Swagger UI / OpenAPI |
-| API Testing | Postman or Swagger UI |
+| API Testing |  Swagger UI |
 | Version Control | Git and GitHub |
 
 ## Project Structure
@@ -176,14 +176,3 @@ Use the webhook signing secret printed by the Stripe CLI for the local webhook c
 - Payment and order cancellation workflows verified manually.
 - React frontend: Planned.
 
-## Future Enhancements
-
-- Build a responsive React frontend.
-- Integrate the frontend with the FastAPI backend.
-- Add product search, filtering, and sorting.
-- Improve automated testing and deployment.
-- Deploy the application to a production environment.
-
-## License
-
-This project is developed for learning and demonstration purposes. Add a license if you intend to distribute it under specific terms.
